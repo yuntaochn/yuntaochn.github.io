@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://www.zhyuntao.com/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Cpps on My New Hugo Site</title>
+    <link>http://www.zhyuntao.com/cpp/</link>
+    <description>Recent content in Cpps on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2020 17:50:32 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2020 09:29:41 +0800</lastBuildDate>
     
-	<atom:link href="http://www.zhyuntao.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.zhyuntao.com/cpp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>http://www.zhyuntao.com/cpp/template/</guid>
       <description>模板是面向对象编程的基础。
 template &amp;lt;typename T&amp;gt; int compare(const T &amp;amp;v1, const T &amp;amp;v2) { } </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://www.zhyuntao.com/post/about/</link>
-      <pubDate>Fri, 28 Feb 2020 17:41:49 +0800</pubDate>
-      
-      <guid>http://www.zhyuntao.com/post/about/</guid>
-      <description>关于自己 张云涛</description>
     </item>
     
   </channel>
