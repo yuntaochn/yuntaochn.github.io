@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cpps on 张云涛的个人博客</title>
-    <link>http://www.zhyuntao.com/cpp/</link>
-    <description>Recent content in Cpps on 张云涛的个人博客</description>
+    <title>Cpps on 张云涛 | Hugo Portfolio Template</title>
+    <link>http://examplesite.com/cpp/</link>
+    <description>Recent content in Cpps on 张云涛 | Hugo Portfolio Template</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 02 Mar 2020 09:29:41 +0800</lastBuildDate>
     
-	<atom:link href="http://www.zhyuntao.com/cpp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://examplesite.com/cpp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>模板与泛型编程</title>
-      <link>http://www.zhyuntao.com/cpp/template/</link>
+      <link>http://examplesite.com/cpp/template/</link>
       <pubDate>Mon, 02 Mar 2020 09:29:41 +0800</pubDate>
       
-      <guid>http://www.zhyuntao.com/cpp/template/</guid>
-      <description>模板是面向对象编程的基础。 template &amp;lt;typename T&amp;gt; int compare(const T &amp;amp;v1, const T &amp;amp;v2) { }</description>
+      <guid>http://examplesite.com/cpp/template/</guid>
+      <description>模板是面向对象编程的基础。
+template &amp;lt;typename T&amp;gt; int compare(const T &amp;amp;v1, const T &amp;amp;v2) { } </description>
     </item>
     
   </channel>

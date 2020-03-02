@@ -1,16 +1,38 @@
-<search>
-    
-     <entry>
-        <title>About</title>
-        <url>http://www.zhyuntao.com/post/about/</url>
-        <categories>
-          
-        </categories>
-        <tags>
-          
-        </tags>
-        <content type="html"> 关于自己 张云涛
-</content>
-    </entry>
-    
-</search>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://examplesite.com/cpp/</loc>
+    <lastmod>2020-03-02T09:29:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://examplesite.com/cpp/template/</loc>
+    <lastmod>2020-03-02T09:29:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://examplesite.com/</loc>
+    <lastmod>2020-02-28T17:50:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://examplesite.com/post/about/</loc>
+    <lastmod>2020-02-28T17:41:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://examplesite.com/post/</loc>
+    <lastmod>2020-02-28T17:41:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://examplesite.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://examplesite.com/tags/</loc>
+  </url>
+  
+</urlset>
