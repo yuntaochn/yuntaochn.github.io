@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 张云涛 | Hugo Portfolio Template</title>
-    <link>http://examplesite.com/post/</link>
-    <description>Recent content in Posts on 张云涛 | Hugo Portfolio Template</description>
+    <title>Posts on Black &amp; Light</title>
+    <link>https://www.zhyuntao.com/post/</link>
+    <description>Recent content in Posts on Black &amp; Light</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
+    <language>en</language>
     <lastBuildDate>Fri, 28 Feb 2020 17:41:49 +0800</lastBuildDate>
     
-	<atom:link href="http://examplesite.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.zhyuntao.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://examplesite.com/post/about/</link>
+      <link>https://www.zhyuntao.com/post/about/</link>
       <pubDate>Fri, 28 Feb 2020 17:41:49 +0800</pubDate>
       
-      <guid>http://examplesite.com/post/about/</guid>
+      <guid>https://www.zhyuntao.com/post/about/</guid>
       <description>关于自己 张云涛</description>
     </item>
     

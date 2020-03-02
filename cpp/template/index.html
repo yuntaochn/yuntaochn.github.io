@@ -1,213 +1,453 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head>
-  <meta charset="utf-8">
-  <title>张云涛 | Hugo Portfolio Template</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
-  <meta name="author" content="Johnathan Smith">
-  <meta name="generator" content="Hugo 0.65.3" />
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap' rel='stylesheet' type='text/css'>
+    
 
-  <style>
-    :root{
-      --primary-color:#41228e;
+    <title>
+      
+      
+         模板与泛型编程 
+      
+    </title>
+    <link rel="canonical" href="https://www.zhyuntao.com/cpp/template/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, .date {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content .date {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
     }
-    </style>
 
-  <!-- plugins -->
-  
-  <link rel="stylesheet" href="http://examplesite.com/plugins/bootstrap/bootstrap.min.css ">
-  
-  <link rel="stylesheet" href="http://examplesite.com/plugins/slick/slick.css ">
-  
-  <link rel="stylesheet" href="http://examplesite.com/plugins/themify-icons/themify-icons.css ">
-  
+    #nav h1 a {
+      font-size:28px;
+    }
 
-  <!-- Main Stylesheet -->
-  
-  <link rel="stylesheet" href="http://examplesite.com/css/style.min.css" integrity="" media="screen">
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
 
-  <!--Favicon-->
-  <link rel="shortcut icon" href="http://examplesite.com/images/favicon.png " type="image/x-icon">
-  <link rel="icon" href="http://examplesite.com/images/favicon.png " type="image/x-icon">
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
 
-</head><body>
-<!-- preloader start -->
-<div class="preloader">
-  
-</div>
-<!-- preloader end -->
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="http://examplesite.com"><img src="http://examplesite.com/images/logo.png" alt="张云涛 | Hugo Portfolio Template"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    #content h1 {
+      font-size:25px;
+    }
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="http://examplesite.com"> Home </a>
-        </li>
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    *, #nav h1 a {
+      color: #FDFDFD;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, .date {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="https://www.zhyuntao.com/">Black &amp; Light</a></h1>
+      <ul>
         
+          <li><a href="https://github.com/davidhampgonsalves/hugo-black-and-light-theme">About</a></li>
         
+          <li><a href="https://github.com/davidhampgonsalves/hugo-black-and-light-theme">Projects</a></li>
         
-        
-        
-        <li class="nav-item ">
-          <a class="nav-link" href="http://examplesite.com/about">About</a>
-        </li>
-        
-        
-        
-        
-        
-        <li class="nav-item ">
-          <a class="nav-link" href="http://examplesite.com/blog">Blog</a>
-        </li>
-        
-        
-        
-        
-        
-        <li class="nav-item ">
-          <a class="nav-link" href="http://examplesite.com/portfolio">Portfolio</a>
-        </li>
-        
-        
-        
-        
-        
-        <li class="nav-item ">
-          <a class="nav-link" href="http://examplesite.com/contact">Contact</a>
-        </li>
-        
+          <li><a href="https://github.com/davidhampgonsalves/hugo-black-and-light-theme">Resume</a></li>
         
       </ul>
-    </div>
-  </nav>
-</header>
+    </section>
+
+
+<section id=content>
+  <h1> 模板与泛型编程 </h1>
 
   
-<section class="page-title bg-primary position-relative overflow-hidden">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary">模板与泛型编程</h1>
-      </div>
+    <div id=sub-header>
+      March 2020 · 1 minute read
     </div>
-  </div>
   
-  <img src="/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
-  <img src="/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
-  <img src="/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
-  <img src="/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
-  <img src="/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
-  <img src="/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
-</section>
 
-
-
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="font-tertiary mb-5">模板与泛型编程</h3>
-          <p class="font-secondary">Published on Mar 02, 2020 by <span class="text-primary">Johnathan Smith</span></p>
-          <div class="content">
-            <img src="http://examplesite.com" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-            <p>模板是面向对象编程的基础。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
-<span style="color:#66d9ef">int</span> compare(<span style="color:#66d9ef">const</span> T <span style="color:#f92672">&amp;</span>v1, <span style="color:#66d9ef">const</span> T <span style="color:#f92672">&amp;</span>v2)
+  <div class="entry-content">
+    <p>模板是面向对象编程的基础。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="font-weight:bold">template</span> &lt;<span style="font-weight:bold">typename</span> T&gt;
+<span style="">int</span> compare(<span style="font-weight:bold">const</span> T &amp;v1, <span style="font-weight:bold">const</span> T &amp;v2)
 {
 
 }
 </code></pre></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 
-
-
-<section class="section section-on-footer" data-background="http://examplesite.com/images/backgrounds/bg-dots.png">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="#" method="POST" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here"></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+  <div id=links>
+    
+    
   </div>
 </section>
 
-
-
-
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">&#43;880 2544 658 256</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyrighht © 2020 a theme by <a href="https://gethugothemes.com">gethugothemes</a></p>
-  </div>
-</footer>
-
-
-<!-- JS Plugins -->
-
-<script src="http://examplesite.com/plugins/jQuery/jquery.min.js"></script>
-
-<script src="http://examplesite.com/plugins/bootstrap/bootstrap.min.js"></script>
-
-<script src="http://examplesite.com/plugins/slick/slick.min.js"></script>
-
-<script src="http://examplesite.com/plugins/shuffle/shuffle.min.js"></script>
-
-
-<!-- Main Script -->
-
-<script src="http://examplesite.com/js/script.min.js"></script>
-
-<!-- google analitycs -->
+  
 </body>
 </html>
+
+
+
