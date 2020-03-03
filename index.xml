@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>线性代数</title>
+      <link>https://www.zhyuntao.com/neep/math/linearalgebra/</link>
+      <pubDate>Tue, 03 Mar 2020 10:50:01 +0800</pubDate>
+      
+      <guid>https://www.zhyuntao.com/neep/math/linearalgebra/</guid>
+      <description>线性代数
+关键是特征值和特征向量
+例如方程 $AB=B$ 表示特征值为1， 特征向量为B的列向量。</description>
+    </item>
+    
+    <item>
       <title>Resume</title>
       <link>https://www.zhyuntao.com/about/resume/</link>
       <pubDate>Mon, 02 Mar 2020 16:25:21 +0800</pubDate>
