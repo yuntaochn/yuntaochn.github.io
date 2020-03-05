@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.zhyuntao.com/cpp/get_path/</loc>
+    <lastmod>2020-03-05T13:40:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zhyuntao.com/cpp/</loc>
+    <lastmod>2020-03-05T13:40:59+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.zhyuntao.com/neep/cs/sort/</loc>
     <lastmod>2020-03-03T14:04:17+08:00</lastmod>
   </url>
@@ -25,11 +35,6 @@
   <url>
     <loc>https://www.zhyuntao.com/about/resume/</loc>
     <lastmod>2020-03-02T16:25:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zhyuntao.com/cpp/</loc>
-    <lastmod>2020-03-02T09:29:41+08:00</lastmod>
   </url>
   
   <url>

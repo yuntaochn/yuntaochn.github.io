@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.65.3" />
     <meta charset="utf-8">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,10 +15,10 @@
     <title>
       
       
-          
+         C&#43;&#43; 获取(绝对)路径 
       
     </title>
-    <link rel="canonical" href="https://www.zhyuntao.com/">
+    <link rel="canonical" href="https://www.zhyuntao.com/cpp/get_path/">
 
     <style>
   * {
@@ -404,7 +403,6 @@
 </style>
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://www.zhyuntao.com/index.xml" title="Black & Light" />
     </head>
 
   <body>
@@ -423,55 +421,53 @@
 
 
 <section id=content>
-  <ul class=posts_listing>
+  <h1> C&#43;&#43; 获取(绝对)路径 </h1>
+
+  
+    <div id=sub-header>
+      March 2020 · 1 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    <p>某些情况下，配置文件的相对位置随执行可执行程序的位置而不固定，因此，程序执行过程中，将配置文件的路径转换为绝对路径。
+方法若干</p>
+<p>###　方法一，利用<code>/proc/self/exe</code>链接至当前程序，获取程序的路径，进而得到配置文件或其他文件的绝对路径。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="">#include</span> <span style="">&lt;linux/limits.h&gt;</span><span style="">
+</span><span style="">#include</span> <span style="">&lt;unistd.h&gt;</span><span style="">
+</span><span style=""></span>std::string GetExePath() {
+    <span style="">char</span> result[PATH_MAX];      <span style="font-style:italic">// PATH_MAX=4096
+</span><span style="font-style:italic"></span>    size_t count = readlink(<span style="font-style:italic">&#34;/proc/self/exe&#34;</span>, result, PATH_MAX);
+    std::string base_path = std::string(result, (count&gt;0)?count:0);
+
+    <span style="font-weight:bold">return</span> base_path.substr(0, base_path.find_last_of(<span style="font-style:italic">&#34;/&#34;</span>));
+}
+</code></pre></div><h3 id="方法二stdfilesystemcurrent_path">方法二，<code>std::filesystem::current_path</code></h3>
+<p>需要C++17支持</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="">#include</span> <span style="">&lt;iostream&gt;</span><span style="">
+</span><span style="">#include</span> <span style="">&lt;filesystem&gt;</span><span style="">
+</span><span style=""></span><span style="font-weight:bold">namespace</span> fs = std::filesystem;
+<span style="">int</span> main()
+{
+    std::cout &lt;&lt; <span style="font-style:italic">&#34;Current path is &#34;</span> &lt;&lt; fs::current_path() &lt;&lt; <span style="font-style:italic">&#39;\n&#39;</span>;
+}
+</code></pre></div><h3 id="方法其他">方法其他</h3>
+<p>待定<br>
+$\cdots$</p>
+
+  </div>
+
+  <div id=links>
     
-      <li>
-        <h2><a href="https://www.zhyuntao.com/cpp/get_path/">C&#43;&#43; 获取(绝对)路径</a></h2>
-        <div class=date>
-          March 2020
-        </div>
-      </li>
+      <a class="basic-alignment left" href="https://www.zhyuntao.com/cpp/template/">&laquo; 模板与泛型编程</a>
     
-      <li>
-        <h2><a href="https://www.zhyuntao.com/neep/cs/sort/">Sort</a></h2>
-        <div class=date>
-          March 2020
-        </div>
-      </li>
     
-      <li>
-        <h2><a href="https://www.zhyuntao.com/neep/math/linearalgebra/">线性代数</a></h2>
-        <div class=date>
-          March 2020
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://www.zhyuntao.com/about/resume/">Resume</a></h2>
-        <div class=date>
-          March 2020
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://www.zhyuntao.com/cpp/template/">模板与泛型编程</a></h2>
-        <div class=date>
-          March 2020
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://www.zhyuntao.com/post/about/">About</a></h2>
-        <div class=date>
-          February 2020
-        </div>
-      </li>
-    
-  </ul>
+  </div>
 </section>
 
   
 </body>
 </html>
+
 
 
