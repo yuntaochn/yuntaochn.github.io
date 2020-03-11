@@ -18,6 +18,7 @@
       
       <guid>https://www.zhyuntao.com/neep/cs/sort/</guid>
       <description>排序算法
+稳定性
 归并排序 自上而下的递归 自下而上的迭代
 快速排序
 桶排序

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coders on Black &amp; Light</title>
+    <link>https://www.zhyuntao.com/coder/</link>
+    <description>Recent content in Coders on Black &amp; Light</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Mar 2020 13:40:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.zhyuntao.com/coder/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C&#43;&#43; 获取(绝对)路径</title>
+      <link>https://www.zhyuntao.com/coder/cpp/get_path/</link>
+      <pubDate>Thu, 05 Mar 2020 13:40:59 +0800</pubDate>
+      
+      <guid>https://www.zhyuntao.com/coder/cpp/get_path/</guid>
+      <description>某些情况下，配置文件的相对位置随执行可执行程序的位置而不固定，因此，程序执行过程中，将配置文件的路径转换为绝对路径。 方法若干
+###　方法一，利用/proc/self/exe链接至当前程序，获取程序的路径，进而得到配置文件或其他文件的绝对路径。
+#include &amp;lt;linux/limits.h&amp;gt;#include &amp;lt;unistd.h&amp;gt;std::string GetExePath() { char result[PATH_MAX]; // PATH_MAX=4096  size_t count = readlink(&amp;#34;/proc/self/exe&amp;#34;, result, PATH_MAX); std::string base_path = std::string(result, (count&amp;gt;0)?count:0); return base_path.substr(0, base_path.find_last_of(&amp;#34;/&amp;#34;)); } 方法二，std::filesystem::current_path 需要C++17支持
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;filesystem&amp;gt;namespace fs = std::filesystem; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;Current path is &amp;#34; &amp;lt;&amp;lt; fs::current_path() &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;; } 方法其他 待定
+$\cdots$
+其他 GetModuleFile() 等</description>
+    </item>
+    
+    <item>
+      <title>模板与泛型编程</title>
+      <link>https://www.zhyuntao.com/coder/cpp/template/</link>
+      <pubDate>Mon, 02 Mar 2020 09:29:41 +0800</pubDate>
+      
+      <guid>https://www.zhyuntao.com/coder/cpp/template/</guid>
+      <description>模板是面向对象编程的基础。
+template &amp;lt;typename T&amp;gt; int compare(const T &amp;amp;v1, const T &amp;amp;v2) { } </description>
+    </item>
+    
+  </channel>
+</rss>
