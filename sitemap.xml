@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.zhyuntao.com/coder/</loc>
+    <lastmod>2020-03-12T17:11:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zhyuntao.com/coder/cs/designpatterns/</loc>
+    <lastmod>2020-03-12T17:11:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zhyuntao.com/coder/cpp/cpp_log_system/</loc>
+    <lastmod>2020-03-12T14:45:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zhyuntao.com/coder/cpp/log4cxx/</loc>
+    <lastmod>2020-03-12T13:37:36+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.zhyuntao.com/develop/</loc>
     <lastmod>2020-03-05T14:30:57+08:00</lastmod>
   </url>
@@ -14,11 +34,6 @@
   
   <url>
     <loc>https://www.zhyuntao.com/coder/cpp/get_path/</loc>
-    <lastmod>2020-03-05T13:40:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zhyuntao.com/coder/</loc>
     <lastmod>2020-03-05T13:40:59+08:00</lastmod>
   </url>
   
