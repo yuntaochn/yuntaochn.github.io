@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>C&#43;&#43; 文件操作</title>
+      <link>https://www.zhyuntao.com/coder/cpp/cpp_file_operation/</link>
+      <pubDate>Mon, 16 Mar 2020 09:46:15 +0800</pubDate>
+      
+      <guid>https://www.zhyuntao.com/coder/cpp/cpp_file_operation/</guid>
+      <description>文件操作
+#include &amp;lt;fstream&amp;gt;#include &amp;lt;iostream&amp;gt; ofstream fout(&amp;#34;output.txt&amp;#34;, std::ios::out); // out 清空追加， app追加  fout &amp;lt;&amp;lt; &amp;#34;helloworld&amp;#34; &amp;lt;&amp;lt; std::endl; fout.flush(); // 清空缓存，否则没有fout.close()则没有文件或文件为空  fout.close(); </description>
+    </item>
+    
+    <item>
       <title>设计模式</title>
       <link>https://www.zhyuntao.com/coder/cs/designpatterns/</link>
       <pubDate>Thu, 12 Mar 2020 17:11:09 +0800</pubDate>
@@ -28,7 +38,9 @@
       <guid>https://www.zhyuntao.com/coder/cpp/cpp_log_system/</guid>
       <description>glog
 日志类型 安全类信息 业务类信息 性能类信息
-日志级别 trace 跟踪 debug 调试 info 通知 warn 警告 error 错误</description>
+日志级别 trace 跟踪 debug 调试 info 通知 warn 警告 error 错误
+spdlog
+滚动日志</description>
     </item>
     
     <item>
