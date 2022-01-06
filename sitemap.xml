@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.zhyuntao.com/blog/blog-list/</loc>
+    <lastmod>2022-01-06T14:57:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zhyuntao.com/blog/</loc>
+    <lastmod>2022-01-06T14:57:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zhyuntao.com/</loc>
+    <lastmod>2022-01-06T14:57:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.zhyuntao.com/posts/my-first-post/</loc>
     <lastmod>2022-01-06T14:43:08+08:00</lastmod>
   </url>
@@ -10,16 +25,6 @@
   <url>
     <loc>https://www.zhyuntao.com/posts/</loc>
     <lastmod>2022-01-06T14:43:08+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zhyuntao.com/</loc>
-    <lastmod>2022-01-06T14:43:08+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zhyuntao.com/blog/</loc>
-    <lastmod>2022-01-06T14:25:31+08:00</lastmod>
   </url>
   
   <url>

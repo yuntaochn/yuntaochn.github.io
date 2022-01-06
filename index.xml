@@ -6,7 +6,24 @@
     <description>Recent content on Zhang Yuntao&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Jan 2022 14:43:08 +0800</lastBuildDate><atom:link href="https://www.zhyuntao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jan 2022 14:57:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.zhyuntao.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog List</title>
+      <link>https://www.zhyuntao.com/blog/blog-list/</link>
+      <pubDate>Thu, 06 Jan 2022 14:57:00 +0800</pubDate>
+      
+      <guid>https://www.zhyuntao.com/blog/blog-list/</guid>
+      <description>VREP踩坑 Ubuntu安装配置 linux创建快捷方式
+TensorFlow 实现物体识别
+Django学习笔记
+ROS-SLAM之rgbdslam v2
+Linux gongju 之 fish shell</description>
+    </item>
+    
     <item>
       <title>My First Post</title>
       <link>https://www.zhyuntao.com/posts/my-first-post/</link>
