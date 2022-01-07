@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <title type="text">Zhang Yuntao&#39;s Site</title>
+    <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
+    <updated>2022-01-07T12:45:04&#43;08:00</updated>
+    <id>https://zhyuntao.com/</id>
+    <link rel="alternate" type="text/html" href="https://zhyuntao.com/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://zhyuntao.com/atom.xml" />
+    <author>
+            <name>张云涛</name>
+            <uri>https://zhyuntao.com/</uri>
+            
+                <email>yuntaochn@163.com</email>
+            </author>
+    <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    <generator uri="https://gohugo.io/" version="0.68.3">Hugo</generator>
+        <entry>
+            <title type="text">Blog List</title>
+            <link rel="alternate" type="text/html" href="https://zhyuntao.com/blog/blog-list/" />
+            <id>https://zhyuntao.com/blog/blog-list/</id>
+            <updated>2022-01-07T11:26:16&#43;08:00</updated>
+            <published>2022-01-06T14:57:00&#43;08:00</published>
+            <author>
+                    <name>张云涛</name>
+                    <uri>https://zhyuntao.com/</uri>
+                    <email>yuntaochn@163.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">目录-技术-专业 ROS C++ 设计模式 Python Qt VREP Linux环境配置 项目 VREP踩坑 Ubuntu安装……</summary>
+            
+                <content type="html">&lt;p&gt;目录-技术-专业
+ROS
+C++ 设计模式
+Python
+Qt
+VREP
+Linux环境配置&lt;/p&gt;
+&lt;p&gt;项目&lt;/p&gt;
+&lt;p&gt;VREP踩坑
+Ubuntu安装配置
+linux创建快捷方式&lt;/p&gt;
+&lt;p&gt;TensorFlow 实现物体识别&lt;/p&gt;
+&lt;p&gt;Django学习笔记&lt;/p&gt;
+&lt;p&gt;ROS-SLAM之rgbdslam v2&lt;/p&gt;
+&lt;p&gt;Linux gongju 之 fish shell&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Hello</title>
+            <link rel="alternate" type="text/html" href="https://zhyuntao.com/blog/hello/" />
+            <id>https://zhyuntao.com/blog/hello/</id>
+            <updated>2022-01-06T14:25:55&#43;08:00</updated>
+            <published>2022-01-06T14:25:31&#43;08:00</published>
+            <author>
+                    <name>张云涛</name>
+                    <uri>https://zhyuntao.com/</uri>
+                    <email>yuntaochn@163.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">hello</summary>
+            
+                <content type="html">&lt;p&gt;hello&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
+</feed>
