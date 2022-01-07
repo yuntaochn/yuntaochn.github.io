@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Zhang Yuntao&#39;s Site</title>
+    <title>Tags on zhangyuntao site</title>
     <link>https://zhyuntao.com/tags/</link>
-    <description>Recent content in Tags on Zhang Yuntao&#39;s Site</description>
+    <description>Recent content in Tags on zhangyuntao site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <managingEditor>yuntaochn@163.com (张云涛)</managingEditor>
-    <webMaster>yuntaochn@163.com (张云涛)</webMaster>
-    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ribice&#34;&gt;Emir Ribic&lt;/a&gt; 2017</copyright>
     
 	<atom:link href="https://zhyuntao.com/tags/index.xml" rel="self" type="application/rss+xml" />
     

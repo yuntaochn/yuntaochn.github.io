@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on zhangyuntao site</title>
+    <link>https://zhyuntao.com/posts/</link>
+    <description>Recent content in Posts on zhangyuntao site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ribice&#34;&gt;Emir Ribic&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Fri, 07 Jan 2022 15:48:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://zhyuntao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello</title>
+      <link>https://zhyuntao.com/posts/hello/</link>
+      <pubDate>Fri, 07 Jan 2022 15:48:56 +0800</pubDate>
+      
+      <guid>https://zhyuntao.com/posts/hello/</guid>
+      <description>asdfasdf</description>
+    </item>
+    
+  </channel>
+</rss>
