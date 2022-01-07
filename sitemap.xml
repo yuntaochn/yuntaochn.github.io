@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zhyuntao.com/about/</loc>
-    <lastmod>2022-01-07T15:17:03+08:00</lastmod>
+    <loc>https://zhyuntao.com/</loc>
+    <lastmod>2022-01-07T15:27:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhyuntao.com/</loc>
+    <loc>https://zhyuntao.com/archives/</loc>
+    <lastmod>2022-01-07T15:27:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhyuntao.com/about/</loc>
     <lastmod>2022-01-07T15:17:03+08:00</lastmod>
   </url>
   
