@@ -23,23 +23,22 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 07 Jan 2022 15:47:35 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 07 Jan 2022 15:49:22 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://zhyuntao.com/rss.xml" />
         
         
             <item>
-                <title>Hello World</title>
-                <link>https://zhyuntao.com/posts/hello-world/</link>
-                <guid isPermaLink="true">https://zhyuntao.com/posts/hello-world/</guid>
-                <pubDate>Fri, 07 Jan 2022 15:16:24 &#43;0800</pubDate>
+                <title>Hello</title>
+                <link>https://zhyuntao.com/posts/hello/</link>
+                <guid isPermaLink="true">https://zhyuntao.com/posts/hello/</guid>
+                <pubDate>Fri, 07 Jan 2022 15:48:56 &#43;0800</pubDate>
                 
                     <author>yuntaochn@163.com (张云涛)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;p&gt;你好&lt;/p&gt;
-</description>
+                    <description></description>
                 
                 
                 
