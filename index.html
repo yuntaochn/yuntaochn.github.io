@@ -10,8 +10,8 @@
 <header>
   <div class="nav">
     <a class="name" href="#top">Yuntao Zhang</a>
-    <nav><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
-    <button id="theme-toggle" aria-label="Toggle color theme">◐</button>
+    <nav><a href="#about" data-i18n="nav.about">About</a><a href="#research" data-i18n="nav.research">Research</a><a href="#publications" data-i18n="nav.publications">Publications</a><a href="#experience" data-i18n="nav.experience">Experience</a><a href="#contact" data-i18n="nav.contact">Contact</a></nav>
+    <button id="lang-toggle" aria-label="Switch language">中文</button><button id="theme-toggle" aria-label="Toggle color theme">◐</button>
   </div>
 </header>
 <main id="top">
@@ -19,48 +19,48 @@
   <img src="assets/img/profile.jpg" alt="Yuntao Zhang">
   <div>
     <h1>Yuntao Zhang <span>张云涛</span></h1>
-    <p class="position">Ph.D. Candidate in Naval Architecture and Ocean Engineering</p>
-    <p><strong>Harbin Engineering University</strong></p>
-    <p class="interests">Autonomous Surface Vehicles · Multi-Agent Systems · Formation & Encirclement Control · Reinforcement Learning</p>
+    <p class="position" data-i18n="profile.position">Ph.D. Candidate in Naval Architecture and Ocean Engineering</p>
+    <p><strong data-i18n="profile.university">Harbin Engineering University</strong></p>
+    <p class="interests" data-i18n="profile.interests">Autonomous Surface Vehicles · Multi-Agent Systems · Formation & Encirclement Control · Reinforcement Learning</p>
     <div class="links"><a href="mailto:yuntaochn@gmail.com">Email</a><a href="https://scholar.google.com/citations?user=QT-FwSkAAAAJ">Google Scholar</a><a href="https://github.com/yuntaochn">GitHub</a><a href="https://orcid.org/0009-0001-8015-8275">ORCID</a></div>
   </div>
 </section>
 
 <section id="about">
-<h2>About</h2>
-<p>I am a Ph.D. candidate at Harbin Engineering University. My research focuses on cooperative autonomy for unmanned surface vehicles (USVs), particularly formation control and dynamic target encirclement. I am interested in combining model-based control, multi-agent reinforcement learning, and marine robotics simulation to develop cooperative methods that remain meaningful under realistic vessel dynamics and actuation constraints.</p>
-<p>Before my doctoral study, I worked as an R&D engineer at EFORT Intelligent Equipment, where I worked on robotic arm software, ROS, and device drivers. I received my B.S. degree in Automation from Nanjing University.</p>
+<h2 data-i18n="about.title">About</h2>
+<p data-i18n="about.p1">I am a Ph.D. candidate at Harbin Engineering University. My research focuses on cooperative autonomy for unmanned surface vehicles (USVs), particularly formation control and dynamic target encirclement. I am interested in combining model-based control, multi-agent reinforcement learning, and marine robotics simulation to develop cooperative methods that remain meaningful under realistic vessel dynamics and actuation constraints.</p>
+<p data-i18n="about.p2">Before my doctoral study, I worked as an R&D engineer at EFORT Intelligent Equipment, where I worked on robotic arm software, ROS, and device drivers. I received my B.S. degree in Automation from Nanjing University.</p>
 </section>
 
 <section id="research">
-<h2>Research Interests</h2>
+<h2 data-i18n="research.title">Research Interests</h2>
 <div class="research-list">
-  <div><h3>Cooperative USV Control</h3><p>Formation acquisition and maintenance for underactuated unmanned surface vehicles.</p></div>
-  <div><h3>Dynamic Target Encirclement</h3><p>Pursuit, encirclement and persistent containment of moving targets by multiple USVs.</p></div>
-  <div><h3>Multi-Agent Reinforcement Learning</h3><p>Learning-based cooperative decision making with emphasis on interpretable and reproducible control architectures.</p></div>
-  <div><h3>Marine Robotics Simulation</h3><p>Algorithm development from lightweight planar environments to ROS 2, VRX and WAM-V validation.</p></div>
+  <div><h3 data-i18n="research.r1t">Cooperative USV Control</h3><p data-i18n="research.r1p">Formation acquisition and maintenance for underactuated unmanned surface vehicles.</p></div>
+  <div><h3 data-i18n="research.r2t">Dynamic Target Encirclement</h3><p data-i18n="research.r2p">Pursuit, encirclement and persistent containment of moving targets by multiple USVs.</p></div>
+  <div><h3 data-i18n="research.r3t">Multi-Agent Reinforcement Learning</h3><p data-i18n="research.r3p">Learning-based cooperative decision making with emphasis on interpretable and reproducible control architectures.</p></div>
+  <div><h3 data-i18n="research.r4t">Marine Robotics Simulation</h3><p data-i18n="research.r4p">Algorithm development from lightweight planar environments to ROS 2, VRX and WAM-V validation.</p></div>
 </div>
 </section>
 
 <section id="news">
-<h2>News</h2>
+<h2 data-i18n="news.title">News</h2>
 <div class="news">
-<p><time>Sep 2026</time><span>Submitted <em>“Order-preserving formation acquisition for dynamic target encirclement by underactuated USVs.”</em></span></p>
-<p><time>2026</time><span>Research focus extended toward persistent dynamic-target encirclement and multi-USV cooperative pursuit.</span></p>
+<p><time>Sep 2026</time><span data-i18n="news.n1">Submitted <em>“Order-preserving formation acquisition for dynamic target encirclement by underactuated USVs.”</em></span></p>
+<p><time>2026</time><span data-i18n="news.n2">Research focus extended toward persistent dynamic-target encirclement and multi-USV cooperative pursuit.</span></p>
 </div>
 </section>
 
 <section id="publications">
-<div class="heading-row"><h2>Selected Publications</h2><a href="https://scholar.google.com/citations?user=QT-FwSkAAAAJ">Google Scholar →</a></div>
+<div class="heading-row"><h2 data-i18n="pub.title">Selected Publications</h2><a href="https://scholar.google.com/citations?user=QT-FwSkAAAAJ">Google Scholar →</a></div>
 <ol class="publications">
 <li><p><strong>Yuntao Zhang</strong>, et al. “Order-preserving formation acquisition for dynamic target encirclement by underactuated USVs.” <span class="status">Manuscript under review, 2026.</span></p></li>
 <li><p><strong>Yuntao Zhang</strong>, Shaocheng Di, Jingzheng Yao. “Multi-USV Cooperative Control Strategy Based on Model Predictive Control with Deep Reinforcement Learning.” <span class="status">ICCES, 2024.</span></p></li>
 </ol>
-<p class="caution">Selected entries are shown here. The publication page will be expanded from verified bibliographic records.</p>
+<p class="caution" data-i18n="pub.note">Selected entries are shown here. The publication page will be expanded from verified bibliographic records.</p>
 </section>
 
 <section id="projects">
-<h2>Research</h2>
+<h2 data-i18n="projects.title">Research</h2>
 <div class="projects">
 <article><div><h3>Dynamic Target Encirclement</h3><p class="meta">Multi-USV · Pursuit–evasion · Persistent containment</p><p>Cooperative methods for acquiring and maintaining an encirclement formation around a moving target, with emphasis on underactuated vessel dynamics and persistent task completion.</p></div><a href="https://github.com/yuntaochn/usv_encirclement">Code →</a></article>
 <article><div><h3>Multi-USV Formation Control</h3><p class="meta">MARL · Cooperative control · Formation</p><p>Learning-enabled formation control in lightweight, reproducible multi-agent simulation environments, including teacher-guided and residual-learning ideas.</p></div><a href="https://github.com/yuntaochn/usv_marl">Code →</a></article>
@@ -69,15 +69,15 @@
 </section>
 
 <section id="experience">
-<h2>Education & Experience</h2>
+<h2 data-i18n="experience.title">Education & Experience</h2>
 <div class="cvrow"><time>2022–Present</time><div><strong>Harbin Engineering University</strong><p>Ph.D. Candidate, Naval Architecture and Ocean Engineering</p></div></div>
 <div class="cvrow"><time>2018–2022</time><div><strong>EFORT Intelligent Equipment</strong><p>R&D Engineer — robotic arm software, ROS and device drivers</p></div></div>
 <div class="cvrow"><time>2014–2018</time><div><strong>Nanjing University</strong><p>B.S. in Automation</p></div></div>
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
-<p>For research-related correspondence, please contact me at <a href="mailto:yuntaochn@gmail.com">yuntaochn@gmail.com</a>.</p>
+<h2 data-i18n="contact.title">Contact</h2>
+<p><span data-i18n="contact.text">For research-related correspondence, please contact me at</span> <a href="mailto:yuntaochn@gmail.com">yuntaochn@gmail.com</a>.</p>
 </section>
 </main>
 <footer><div>© <span id="year"></span> Yuntao Zhang</div><div>Academic homepage · Last updated 2026</div></footer>
