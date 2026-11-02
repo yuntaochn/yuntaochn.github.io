@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" lang="en" width="1000" height="542" viewBox="0 0 1000 542"><title id="title">Research framework for dynamic-target encirclement</title><desc id="desc">A three-vessel team acquires a closed formation, maintains or recovers it, and supplies a unit for two-target coordination. Both models evaluate the same mission stages. This is a research design.</desc>
+<defs><marker id="tip" viewBox="0 0 8 8" markerWidth="6.5" markerHeight="6.5" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#19577c"/></marker></defs><rect width="1000" height="542" fill="#fff"/><g font-family="Arial, 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', 'Droid Sans Fallback', sans-serif">
+<text x="24" y="28" font-size="14" fill="#19577c"  font-weight="700" text-anchor="start" font-style="normal">CHS. 1–2   TASK AND MODEL</text>
+<text x="24" y="61" font-size="23" fill="#192e3c" font-family="Georgia, 'Noto Serif CJK SC', 'Songti SC', SimSun, 'Droid Sans Fallback', serif" font-weight="700" text-anchor="start" font-style="normal">How can a fleet establish and sustain encirclement as several targets maneuver?</text>
+<text x="24" y="88" font-size="17" fill="#475e6c"  font-weight="400" text-anchor="start" font-style="normal">WAM-V dynamics and actuation limits, with common definitions of closure, loss and recovery.</text>
+<path d="M24 104 H976" fill="none" stroke="#192e3c" stroke-width="1" stroke-linejoin="round"/>
+<text x="130" y="133" font-size="13.5" fill="#475e6c"  font-weight="700" text-anchor="middle" font-style="normal">CH. 3</text>
+<text x="130" y="160" font-size="20.5" fill="#192e3c" font-family="Georgia, 'Noto Serif CJK SC', 'Songti SC', SimSun, 'Droid Sans Fallback', serif" font-weight="700" text-anchor="middle" font-style="normal">Formation acquisition</text>
+<text x="130" y="184" font-size="15.4" fill="#475e6c"  font-weight="400" text-anchor="middle" font-style="normal">Three pursuers, one target</text>
+<text x="494" y="133" font-size="13.5" fill="#475e6c"  font-weight="700" text-anchor="middle" font-style="normal">CH. 4</text>
+<text x="494" y="160" font-size="20.5" fill="#192e3c" font-family="Georgia, 'Noto Serif CJK SC', 'Songti SC', SimSun, 'Droid Sans Fallback', serif" font-weight="700" text-anchor="middle" font-style="normal">Persistent encirclement</text>
+<text x="494" y="184" font-size="15.4" fill="#475e6c"  font-weight="400" text-anchor="middle" font-style="normal">One target, relief permitted</text>
+<text x="862" y="133" font-size="13.5" fill="#475e6c"  font-weight="700" text-anchor="middle" font-style="normal">CH. 5</text>
+<text x="862" y="160" font-size="20.5" fill="#192e3c" font-family="Georgia, 'Noto Serif CJK SC', 'Songti SC', SimSun, 'Droid Sans Fallback', serif" font-weight="700" text-anchor="middle" font-style="normal">Dynamic grouping</text>
+<text x="862" y="184" font-size="15.4" fill="#475e6c"  font-weight="400" text-anchor="middle" font-style="normal">Two three-vessel teams (proposed)</text>
+<rect x="24" y="204" width="214" height="66" fill="#eaf2f6" stroke="#19577c" stroke-width="1.55"/>
+<text x="131.0" y="231" font-size="17.8" fill="#192e3c"  font-weight="700" text-anchor="middle" font-style="normal">Select formation and</text>
+<text x="131.0" y="254" font-size="16.1" fill="#192e3c"  font-weight="400" text-anchor="middle" font-style="normal">acquire initial closure</text>
+<rect x="389" y="204" width="210" height="66" fill="#eaf2f6" stroke="#19577c" stroke-width="1.55"/>
+<text x="494.0" y="231" font-size="17.8" fill="#192e3c"  font-weight="700" text-anchor="middle" font-style="normal">Adjust the formation</text>
+<text x="494.0" y="254" font-size="16.1" fill="#192e3c"  font-weight="400" text-anchor="middle" font-style="normal">to sustain containment</text>
+<rect x="751" y="204" width="221" height="66" fill="#eaf2f6" stroke="#19577c" stroke-width="1.55"/>
+<text x="861.5" y="231" font-size="17.8" fill="#192e3c"  font-weight="700" text-anchor="middle" font-style="normal">Choose memberships</text>
+<text x="861.5" y="254" font-size="16.1" fill="#192e3c"  font-weight="400" text-anchor="middle" font-style="normal">and time the handoffs</text>
+<path d="M238 237 H384" fill="none" stroke="#19577c" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#tip)"/>
+<path d="M599 237 H746" fill="none" stroke="#19577c" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="311" y="225" font-size="15.8" fill="#19577c"  font-weight="700" text-anchor="middle" font-style="normal">Closure state</text>
+<text x="674" y="225" font-size="15.8" fill="#19577c"  font-weight="700" text-anchor="middle" font-style="normal">Hold and recovery</text>
+<path d="M130 270 V297" fill="none" stroke="#748995" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="130" y="322" font-size="16.1" fill="#192e3c"  font-weight="700" text-anchor="middle" font-style="normal">State handed forward</text>
+<text x="130" y="347" font-size="15.3" fill="#475e6c"  font-weight="400" text-anchor="middle" font-style="normal">Positions, headings and speeds</text>
+<path d="M431 270 V317" fill="none" stroke="#19577c" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#tip)"/>
+<path d="M554 321 V274" fill="none" stroke="#19577c" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="390" y="299" font-size="14.2" fill="#19577c"  font-weight="400" text-anchor="middle" font-style="normal">Exit or loss</text>
+<text x="562" y="299" font-size="14.2" fill="#19577c"  font-weight="400" text-anchor="start" font-style="normal">Hold or resume</text>
+<rect x="390" y="322" width="209" height="48" fill="#fff" stroke="#748995" stroke-width="1.3"/>
+<text x="494.5" y="351" font-size="16.8" fill="#192e3c"  font-weight="400" text-anchor="middle" font-style="normal">Arrange relief or reclose</text>
+<path d="M861 270 V281 H800 V299" fill="none" stroke="#19577c" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#tip)"/>
+<path d="M861 281 H920 V299" fill="none" stroke="#19577c" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="800" y="319" font-size="16" fill="#192e3c"  font-weight="700" text-anchor="middle" font-style="normal">Target A</text>
+<text x="920" y="319" font-size="16" fill="#192e3c"  font-weight="700" text-anchor="middle" font-style="normal">Target B</text>
+<path d="M800 326 V337 H919 V326" fill="none" stroke="#748995" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M860 337 V346" fill="none" stroke="#748995" stroke-width="1.2" stroke-linejoin="round"/>
+<text x="860" y="366" font-size="16.1" fill="#192e3c"  font-weight="700" text-anchor="middle" font-style="normal">Joint containment fraction</text>
+<path d="M24 383 V397 H975 V383" fill="none" stroke="#748995" stroke-width="1.35" stroke-linejoin="round"/>
+<path d="M498 397 V418" fill="none" stroke="#19577c" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="24" y="444" font-size="14.4" fill="#19577c"  font-weight="700" text-anchor="start" font-style="normal">CH. 6</text>
+<text x="108" y="445" font-size="20" fill="#192e3c" font-family="Georgia, 'Noto Serif CJK SC', 'Songti SC', SimSun, 'Droid Sans Fallback', serif" font-weight="700" text-anchor="start" font-style="normal">Cross-model validation</text>
+<text x="24" y="475" font-size="16.6" fill="#192e3c"  font-weight="400" text-anchor="start" font-style="normal">Batch trials with the planar 3-DOF WAM-V model</text>
+<path d="M414 469 H483" fill="none" stroke="#19577c" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="508" y="475" font-size="16.0" fill="#192e3c"  font-weight="400" text-anchor="start" font-style="normal">Reproduce critical formation, loss and transfer cases in VRX</text>
+<path d="M24 498 H976" fill="none" stroke="#748995" stroke-width="1" stroke-linejoin="round"/>
+<text x="24" y="525" font-size="14.4" fill="#19577c"  font-weight="700" text-anchor="start" font-style="normal">Scope</text>
+<text x="110" y="525" font-size="15.3" fill="#475e6c"  font-weight="400" text-anchor="start" font-style="normal">The study will identify operating conditions. Pursuit–evasion games and MARL are candidate methods.</text>
+</g></svg>

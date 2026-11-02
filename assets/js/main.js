@@ -2,6 +2,7 @@ const root=document.documentElement;
 const savedTheme=localStorage.getItem("theme");if(savedTheme)root.dataset.theme=savedTheme;
 document.getElementById("theme-toggle").addEventListener("click",()=>{const t=root.dataset.theme==="dark"?"light":"dark";root.dataset.theme=t;localStorage.setItem("theme",t)});
 const zh={
+"nav.briefings":"研究展示","briefings.title":"研究展示","briefings.thesis":"面向动态目标围捕的无人艇编队控制方法研究","briefings.description":"我的博士课题从三艇的首次合围讲起，研究目标突围或成员退出时怎样维持包围，再讨论两个艇组怎样同时围住两个运动目标。","briefings.read":"阅读博士课题总览 →","briefings.present":"进入讲解模式 →",
 "nav.about":"简介","nav.research":"研究","nav.publications":"论文","nav.experience":"经历","nav.contact":"联系",
 "profile.position":"船舶与海洋工程博士研究生","profile.university":"哈尔滨工程大学","profile.interests":"无人水面艇 · 多智能体系统 · 编队与围捕控制 · 强化学习",
 "about.title":"个人简介","about.p1":"我目前是哈尔滨工程大学博士研究生，研究方向主要围绕无人水面艇（USV）协同自主控制，重点关注编队控制与动态目标围捕。我希望结合基于模型的控制方法、多智能体强化学习与海洋机器人仿真，研究能够适应真实船舶动力学与执行器约束的多艇协同控制方法。","about.p2":"攻读博士学位前，我曾在埃夫特智能装备从事研发工作，主要涉及机器人软件、ROS 与设备驱动开发。本科毕业于南京大学自动化专业。",
@@ -12,6 +13,16 @@ const zh={
 };
 const en={};document.querySelectorAll("[data-i18n]").forEach(el=>en[el.dataset.i18n]=el.innerHTML);
 function setLang(lang){document.documentElement.lang=lang==="zh"?"zh-CN":"en";document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;el.innerHTML=lang==="zh"?(zh[k]||en[k]):en[k]});document.getElementById("lang-toggle").textContent=lang==="zh"?"EN":"中文";localStorage.setItem("language",lang)}
-let lang=localStorage.getItem("language")||"en";setLang(lang);
-document.getElementById("lang-toggle").addEventListener("click",()=>{lang=lang==="zh"?"en":"zh";setLang(lang)});
+const linkedLanguage = new URLSearchParams(location.search).get("lang");
+let lang = ["en","zh"].includes(linkedLanguage) ? linkedLanguage : (localStorage.getItem("language") || "en");
+setLang(lang);
+document.getElementById("lang-toggle").addEventListener("click", () => {
+  lang = lang === "zh" ? "en" : "zh";
+  setLang(lang);
+  const url = new URL(location.href);
+  if (url.searchParams.has("lang")) {
+    url.searchParams.set("lang", lang);
+    history.replaceState(history.state, "", url);
+  }
+});
 document.getElementById("year").textContent=new Date().getFullYear();

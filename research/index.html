@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynamic Target Encirclement · Yuntao Zhang</title>
+<meta name="description" content="Doctoral research briefing on formation acquisition, persistent encirclement and multi-target coordination of unmanned surface vessels.">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="briefing.css">
+</head><body>
+<header><div class="nav"><a class="name" href="../">Yuntao Zhang</a>
+<a class="back" href="../#briefings"><span lang="zh-CN">← 研究展示</span><span lang="en">← Research briefings</span></a>
+<button id="lang-toggle" aria-label="Switch language / 切换语言">中文</button>
+<button id="theme-toggle" aria-label="Toggle theme / 切换主题">◐</button>
+</div></header>
+<main>
+<div class="controls">
+<nav id="topic-nav" aria-label="Briefing contents / 汇报目录"><a href="#overview"><span lang="zh-CN">课题总览</span><span lang="en">Overview</span></a><a href="#roadmap"><span lang="zh-CN">研究路线</span><span lang="en">Roadmap</span></a><a href="#formation"><span lang="zh-CN">构型形成</span><span lang="en">Formation</span></a><a href="#persistence"><span lang="zh-CN">保持与恢复</span><span lang="en">Persistence</span></a><a href="#allocation"><span lang="zh-CN">多目标编组</span><span lang="en">Allocation</span></a><a href="#validation"><span lang="zh-CN">综合验证</span><span lang="en">Validation</span></a></nav>
+<div class="talk-buttons">
+<button id="start-talk" type="button" hidden><span lang="zh-CN">逐节讲解</span><span lang="en">Present</span></button>
+<div id="talk-tools" hidden>
+<button id="prev-topic" type="button"><span lang="zh-CN">上一节</span><span lang="en">Previous</span></button>
+<span id="talk-progress" aria-live="polite"></span>
+<button id="next-topic" type="button"><span lang="zh-CN">下一节</span><span lang="en">Next</span></button>
+<button id="exit-talk" type="button"><span lang="zh-CN">返回通读</span><span lang="en">Read all</span></button>
+</div></div></div>
+<article id="briefing">
+<section id="overview" class="topic">
+<p class="chapter"><span lang="zh-CN">博士论文 · 研究方案</span><span lang="en">Doctoral dissertation · Research plan</span></p><h1 tabindex="-1"><span lang="zh-CN">面向动态目标围捕的无人艇编队控制方法研究</span><span lang="en">Formation control of unmanned surface vessels for dynamic target encirclement</span></h1><p class="byline"><span lang="zh-CN">张云涛　哈尔滨工程大学</span><span lang="en">Yuntao Zhang · Harbin Engineering University</span></p><p class="lead"><span lang="zh-CN">三艘艇刚刚从三个方向围住目标。目标随即转向两艇之间的空隙。仅看这一刻的艇位，两支编队可以完全相同；当它们的艏向和航速不同，能否赶在目标之前补上缺口？</span><span lang="en">Three vessels have just enclosed a target. It turns towards a gap. Two teams can have identical positions at that instant, yet very different headings and speeds. Which team can cover the gap in time?</span></p><p><span lang="zh-CN">本研究关注目标在首次合围后仍持续机动的情形。先考察一个三艇组怎样形成、保持和恢复包围，再把单组能力用于双目标之间的艇力调配。下文列出拟检验的问题与证据，实验结果将在验证后补充。</span><span lang="en">The target keeps moving after the first enclosure. I study how one team forms, maintains and recovers an enclosure, then how two teams allocate vessels between moving targets. The questions and comparisons below are planned experiments.</span></p><details class="notes"><summary><span lang="zh-CN">讲解提示</span><span lang="en">Speaker note</span></summary><p><span lang="zh-CN">从同一幅合围快照讲起。请听众先判断：仅凭位置，能否知道目标下一次转向时哪一侧会失守？</span><span lang="en">Start with a snapshot of the enclosure. Ask whether positions alone reveal which side will open when the target turns.</span></p></details></section>
+<section id="roadmap" class="topic"><p class="chapter"><span lang="zh-CN">第1–2章 · 任务与共同模型</span><span lang="en">Chapters 1–2 · Task and model</span></p><h2 tabindex="-1"><span lang="zh-CN">从首次合围到双目标同时受控</span><span lang="en">From initial enclosure to joint containment</span></h2><p><span lang="zh-CN">统一使用 WAM-V 的运动和推进约束，分别定义首次合围、失围与恢复。图中的箭头标明每项研究向下一项提供的状态或能力。</span><span lang="en">All three studies share WAM-V motion and actuation constraints and common definitions of enclosure, loss and recovery. Each arrow identifies what the next study takes as input.</span></p><figure><div class="map-window" tabindex="0" role="region" aria-label="Research diagram / 研究路线图">
+<img lang="zh-CN" src="roadmap-zh.svg" alt="三艇初次合围后，闭合状态用于检验保持与恢复。该能力再用于两个目标的艇组调配。三个阶段共同接受二维与 VRX 验证。">
+<img lang="en" src="roadmap-en.svg" alt="The closure state feeds the persistence study. The resulting single-team capability informs two-target allocation. All stages share planar and VRX validation.">
+</div><figcaption><span lang="zh-CN">图 1　各项研究之间的依赖关系。</span><span lang="en">Figure 1. Dependencies between the three studies.</span> <a href="roadmap-zh.svg" lang="zh-CN">查看矢量原图</a><a href="roadmap-en.svg" lang="en">Open vector figure</a></figcaption></figure><details class="notes"><summary><span lang="zh-CN">路线图的画法与原图出处</span><span lang="en">Figure design and original examples</span></summary><p><span lang="zh-CN">Diamanti 的海洋机器人博士论文图 1 将任务阶段与研究问题对应。李健翔等的图 2 用分支与汇合表示方法依赖。本图沿用这两种表达思路，重新绘制本课题的研究关系。</span><span lang="en">Figure 1 of Diamanti’s marine robotics dissertation maps mission stages to research questions. Figure 2 of Li et al. uses branching and joining arrows to show method dependencies. The figure above applies these conventions to this dissertation.</span></p><ul><li><a href="https://assor.folk.ntnu.no/PhD%20Thesis/250068%20Eleni%20Diamanti%20_v1.1_elektronisk.pdf"><span lang="zh-CN">Diamanti（2025），绪论图 1</span><span lang="en">Diamanti (2025), Introduction, Fig. 1</span></a></li><li><a href="https://doi.org/10.11993/j.issn.2096-3920.2024-0039"><span lang="zh-CN">李健翔等（2025），图 2</span><span lang="en">Li et al. (2025), Fig. 2</span></a></li></ul></details></section>
+<section id="formation" class="topic">
+<p class="chapter"><span lang="zh-CN">第3章 · 单目标 · 3 对 1</span><span lang="en">Chapter 3 · One target · Three pursuers</span></p>
+<h2 tabindex="-1"><span lang="zh-CN">怎样形成下一阶段守得住的包围？</span><span lang="en">Which closure states can the team defend?</span></h2>
+<p class="lead"><span lang="zh-CN">从分散初态接近同一目标，三艇即使在相同时间到达相似的包围位置，也可能留下不同的补位余量。</span><span lang="en">Starting from dispersed positions, two teams may form similar enclosures in the same time but differ in how quickly they can respond to a turn.</span></p>
+<dl class="study">
+<dt><span lang="zh-CN">研究对象</span><span lang="en">Study object</span></dt><dd><span lang="zh-CN">确定围捕构型和成员站位，考察首次安全闭合时各艇的位置、艏向和速度。</span><span lang="en">Select the geometry and assign stations. At the first safe enclosure, record each vessel’s position, heading and speed.</span></dd>
+<dt><span lang="zh-CN">拟作比较</span><span lang="en">Planned comparison</span></dt><dd><span lang="zh-CN">让不同形成方法在闭合后切换到同一个保持控制器。比较首次闭合时间，以及面对相同逃逸规则时的保持表现。</span><span lang="en">Hand each resulting state to the same holding controller. Compare time to first closure and subsequent retention against the same closed-loop evasion rule.</span></dd>
+</dl>
+<details class="notes"><summary><span lang="zh-CN">讲解提示</span><span lang="en">Speaker note</span></summary><p><span lang="zh-CN">需要解释两组艇为何在相似的几何终态下有不同的补位时间。</span><span lang="en">Explain how two geometrically similar enclosures could leave different response times.</span></p></details>
+</section>
+<section id="persistence" class="topic">
+<p class="chapter"><span lang="zh-CN">第4章 · 单目标 · 3 对 1</span><span lang="en">Chapter 4 · One target · Three active pursuers</span></p>
+<h2 tabindex="-1"><span lang="zh-CN">目标突围或一艘艇退出，包围怎样延续？</span><span lang="en">Can the enclosure survive a turn or a handover?</span></h2>
+<p class="lead"><span lang="zh-CN">从同一已闭合状态出发，目标可持续冲向一个缺口，也可在围捕艇接近时改变方向。</span><span lang="en">Start from the same closed state. The target can commit to one gap or change direction as a pursuer approaches.</span></p>
+<dl class="study">
+<dt><span lang="zh-CN">接替与恢复</span><span lang="en">Handover and recovery</span></dt><dd><span lang="zh-CN">计划交接时，接替艇可提前到位。若一艘艇突然退出，余下两艇无法单独形成三角包围；从失围持续计时，直至接替艇到位并重新闭合。</span><span lang="en">A scheduled relief can arrive before departure. If a vessel leaves abruptly, the two remaining vessels cannot enclose an area. Measure the interruption until the relief arrives and the team closes again.</span></dd>
+<dt><span lang="zh-CN">拟作比较</span><span lang="en">Planned comparison</span></dt><dd><span lang="zh-CN">用同样的观测和推进限制比较预测补位与利用目标运动历史的协同策略，记录首次失围时间、有效围控时间占比和恢复率。</span><span lang="en">Give predictive and history-aware policies the same observations and actuation limits. Compare time to first loss, fraction of time enclosed and recovery rate.</span></dd>
+</dl>
+<figure style="margin:1.1rem 0 0;max-width:620px">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 194" width="560" role="img" aria-label="Single-target handover timelines / 单目标接替的时序示意" style="display:block;width:100%;height:auto;color:var(--text)" font-family="inherit" fill="currentColor">
+    <g font-size="16" font-weight="600"><text x="8" y="21" lang="zh-CN">计划交接</text><text x="8" y="21" lang="en">Planned relief</text></g>
+    <g font-size="14" text-anchor="end"><text x="550" y="21" lang="zh-CN">有条件连续保持</text><text x="550" y="21" lang="en">Closure may be continuous</text></g>
+    <path d="M12 44 H549" stroke="var(--link)" stroke-width="4" fill="none"/>
+    <g stroke="currentColor" stroke-width="1.4"><path d="M175 37 V51 M396 37 V51" fill="none"/></g>
+    <g font-size="14" text-anchor="middle"><text x="175" y="71" lang="zh-CN">接替艇就位</text><text x="175" y="71" lang="en">Relief vessel in position</text><text x="396" y="71" lang="zh-CN">原艇退出</text><text x="396" y="71" lang="en">Original vessel leaves</text></g>
+    <g font-size="16" font-weight="600"><text x="8" y="108" lang="zh-CN">突发退出</text><text x="8" y="108" lang="en">Sudden loss</text></g>
+    <g font-size="14" text-anchor="end"><text x="550" y="108" lang="zh-CN">接替后恢复包围</text><text x="550" y="108" lang="en">Closure regained after relief</text></g>
+    <path d="M12 132 H175 M396 132 H549" stroke="var(--link)" stroke-width="4" fill="none"/>
+    <path d="M175 132 H396" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 5" fill="none"/>
+    <g stroke="currentColor" stroke-width="1.4"><path d="M175 125 V139 M396 125 V139" fill="none"/></g>
+    <g font-size="14" text-anchor="middle"><text x="175" y="160" lang="zh-CN">一艇退出，仅余两艇</text><text x="175" y="160" lang="en">One leaves, two remain</text><text x="396" y="160" lang="zh-CN">三艇重新闭合</text><text x="396" y="160" lang="en">Three vessels reclose</text></g>
+    <path d="M12 183 H32" stroke="var(--link)" stroke-width="3" fill="none"/><path d="M160 183 H185" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+    <g font-size="13.5"><text x="40" y="187" lang="zh-CN">有效围捕</text><text x="40" y="187" lang="en">Closed formation</text><text x="192" y="187" lang="zh-CN">围捕中断</text><text x="192" y="187" lang="en">Interruption</text><text x="550" y="187" text-anchor="end" lang="zh-CN">时序示意 · 非实测</text><text x="550" y="187" text-anchor="end" lang="en">Illustrative timing</text></g>
+  </svg>
+</figure>
+<details class="notes"><summary><span lang="zh-CN">讲解提示</span><span lang="en">Speaker note</span></summary><p><span lang="zh-CN">区分连续保持的交接和中断后的成功恢复。这两种轨迹应分别计分。</span><span lang="en">Distinguish an uninterrupted handover from a successful recovery after a gap. They answer different questions.</span></p></details>
+</section>
+<section id="allocation" class="topic">
+<p class="chapter"><span lang="zh-CN">第5章 · 双目标 · 拟采用 6 对 2</span><span lang="en">Chapter 5 · Two targets · Proposed six-versus-two scenario</span></p>
+<h2 tabindex="-1"><span lang="zh-CN">两组都需要艇时，什么时候值得换组？</span><span lang="en">When does reassignment help both teams?</span></h2>
+<p class="lead"><span lang="zh-CN">两个目标相互接近、交叉后再分离。原先适合围住目标 A 的艇，可能更接近目标 B，但转场途中原组会出现缺口。</span><span lang="en">Two targets approach, cross and separate. A vessel assigned to A may end up closer to B, but changing teams can expose a gap during transit.</span></p>
+<dl class="study">
+<dt><span lang="zh-CN">资源条件</span><span lang="en">Fleet constraint</span></dt><dd><span lang="zh-CN">六艘艇各归一组，两个三艇组没有预留艇。目标 A、B 有标识时，有 20 种三加三的成员分法。</span><span lang="en">Each vessel serves one group. Two teams of three leave no spare. With targets A and B distinguished, there are 20 possible assignments.</span></dd>
+<dt><span lang="zh-CN">拟作比较</span><span lang="en">Planned comparison</span></dt><dd><span lang="zh-CN">比较固定分组、按预计到达时间重组，以及计入转场和原组失围风险的重组。主指标为两个目标同时有效受控的时间占比。</span><span lang="en">Compare fixed groups, reassignment by arrival time and reassignment accounting for transit and exposure of the donor group. Measure the fraction of a shared window for which both targets remain enclosed.</span></dd>
+</dl>
+<details class="notes"><summary><span lang="zh-CN">讲解提示</span><span lang="en">Speaker note</span></summary><p><span lang="zh-CN">把一次局部补位放到两组共同的时间轴上。接收组改善时，调出组的损失也要计入。</span><span lang="en">Place the transfer on a common time axis. Count the donor team’s loss alongside the receiving team’s gain.</span></p></details>
+</section>
+<section id="validation" class="topic"><p class="chapter"><span lang="zh-CN">第6章与结论 · 验证计划</span><span lang="en">Chapter 6 and conclusions · Validation plan</span></p><h2 tabindex="-1"><span lang="zh-CN">哪些结论能在 VRX 中复现？</span><span lang="en">Which findings will carry over to VRX?</span></h2><p><span lang="zh-CN">先用与 WAM-V 推进配置一致的二维三自由度模型开展配对试验，再将代表性的形成、临界失围和跨组交接工况放入 VRX。统一目标行为规则和任务判据，让目标实时响应各自面前的编队。</span><span lang="en">Run paired trials with a planar three-degree-of-freedom model matched to the WAM-V propulsion configuration. Revisit representative cases of acquisition, near-breakout and team transfer in VRX. Use the same task criteria and evasion rule while allowing the target to react to the actual team.</span></p><p><span lang="zh-CN">追逃博弈和多智能体强化学习是候选方法。前者可描述双方怎样回应对方，后者可检验历史观测对协作的价值。选型取决于与模型预测控制等基线的对照证据。结论将界定方法适用的速度、机动和艇组条件。</span><span lang="en">Pursuit–evasion games and multi-agent reinforcement learning are candidate approaches. The first can describe mutual responses. The second can test whether observation history helps the team coordinate. Comparisons with model-based baselines will determine the choice and delimit the operating conditions.</span></p><h3><span lang="zh-CN">相关文献</span><span lang="en">Selected reading</span></h3><ul class="reading"><li><a href="https://doi.org/10.1109/TIE.2021.3076719">Hu &amp; Zhang (2022)</a> · <span lang="zh-CN">三艇环绕运动目标的水池试验。</span><span lang="en">Three-vessel surrounding of a moving target in a pool.</span></li><li><a href="https://doi.org/10.3390/jmse13081558">Qu et al. (2025)</a> · <span lang="zh-CN">六艇对两目标的动态分配与围捕仿真。</span><span lang="en">Dynamic assignment and encirclement in a six-versus-two simulation.</span></li></ul></section>
+</article></main>
+<footer><div>© <span id="year"></span> Yuntao Zhang</div><a href="../#briefings"><span lang="zh-CN">返回研究展示</span><span lang="en">Back to research briefings</span></a></footer>
+<script src="../assets/js/main.js"></script>
+<script src="briefing.js"></script>
+</body></html>
